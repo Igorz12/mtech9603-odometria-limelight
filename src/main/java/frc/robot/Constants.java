@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation3d;
 import edu.wpi.first.math.util.Units;
 import swervelib.math.Matter;
@@ -77,5 +79,12 @@ public final class Constants
     public static final double ANGULO_ZERO = 0.0;
 
     public static final double point0 = 0.0;   // antes era 5.85
+  }
+
+    public static final class FieldPose
+  {
+    public static final Pose2d pose1 = new Pose2d(2.0, 3.5, Rotation2d.fromDegrees(0));
+    public static final Pose2d pose2 = new Pose2d(4.0, 4.5, Rotation2d.fromDegrees(19));
+
   }
 }

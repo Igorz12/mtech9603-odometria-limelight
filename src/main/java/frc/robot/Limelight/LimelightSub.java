@@ -1,6 +1,8 @@
 package frc.robot.Limelight;
 
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.Limelight.LimelightHelpers.PoseEstimate;
 
 import org.littletonrobotics.junction.Logger;
 
@@ -45,6 +47,10 @@ public class LimelightSub extends SubsystemBase {
   public String getClasse() {
     return LimelightHelpers.getDetectorClass(nome);
   }
+
+//    public Rotation2d getFieldHeading() {
+//     return PoseEstimate.getEstimatedPosition().getRotation();
+// }
 
   @Override
   public void periodic() {
